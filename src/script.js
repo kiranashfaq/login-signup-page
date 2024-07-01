@@ -40,6 +40,8 @@ var link = document.getElementById("link")
 // for create_acc
 
 create_acc.addEventListener("click", function () {
+
+  localStorage.setItem("isLoggedIn", true);
   var userData = {
     username: username.value,
     email_acc: email_acc.value,
@@ -99,18 +101,6 @@ login.addEventListener("click", function () {
     alert("wrong email or password");
   }
 });
-// sign_in_btn.addEventListener("click",function(){
-//   if(email_acc.value == "" || pass_acc.value == "" || username.value == ""){
-//     Swal.fire({
-//       icon: "error",
-//       title: "Oops...",
-//       text: "please fill your field",
-//       showConfirmButton: false,
-//       timer: 1500,
-//     });
-//   container.classList.remove("sign-up-mode");
-//   }
-// })
 
 
 
@@ -133,15 +123,84 @@ login.addEventListener("click", function () {
     }
   });
 
-    // const passwordInput_2 = document.getElementById("pass-acc");
-    // const eyeIcon_2 = document.getElementById("eye-icon-2");
+    const passwordInput_2 = document.getElementById("pass-acc");
+    const eyeIcon_2 = document.getElementById("eye-icon-2");
 
-    // eyeIcon_2.addEventListener("click", () => {
-    //   if (passwordInput_2.type === "password") {
-    //     passwordInput_2.type = "text";
-    //     eyeIcon_2.classList.add("fa-eye-slash");
-    //   } else {
-    //     passwordInput_2.type = "password";
-    //     eyeIcon_2.classList.remove("fa-eye-slash");
-    //   }
-    // });
+    eyeIcon_2.addEventListener("click", () => {
+      if (passwordInput_2.type === "password") {
+        passwordInput_2.type = "text";
+        eyeIcon_2.classList.add("fa-eye-slash");
+      } else {
+        passwordInput_2.type = "password";
+        eyeIcon_2.classList.remove("fa-eye-slash");
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let users = {};
+    let isLoggedIn = false;
+
+    // Function to register a new user
+    function register() {
+      let newUsername = document.getElementById("new-username").value;
+      let newPassword = document.getElementById("new-password").value;
+      users[newUsername] = newPassword;
+      alert("Account created successfully!");
+      isLoggedIn = true;
+      showDashboard();
+    }
+
+    // Function to login an existing user
+    function login() {
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+      if (users[username] && users[username] === password) {
+        alert("Login successful!");
+        isLoggedIn = true;
+        showDashboard();
+      } else {
+        alert("Invalid username or password. Try again!");
+      }
+    }
+
+    // Function to show the dashboard
+    function showDashboard() {
+      if (isLoggedIn) {
+        document.getElementById("login-form").style.display = "none";
+        document.getElementById("register-form").style.display = "none";
+        document.getElementById("dashboard").style.display = "block";
+      }
+    }
+
+    // Add event listeners to the buttons
+    document.getElementById("register-btn").addEventListener("click", register);
+    document.getElementById("login-btn").addEventListener("click", login);
+
+    // Hide the dashboard by default
+    document.getElementById("dashboard").style.display = "none";
+
+    // Check if the user is logged in on page load
+    if (isLoggedIn) {
+      showDashboard();
+    }

@@ -100,24 +100,35 @@ login.addEventListener("click", function () {
 //   }
 // })
 
-var passwordInput = document.getElementById('password');
-var eyeIcon = document.getElementById('eye-icon');
-eyeIcon.addEventListener('click', function () {
-  if (passwordInput.type === 'password') {
-    passwordInput.type = 'text';
-    eyeIcon.classList.add('fa-eye-slash');
+login.addEventListener("click", function () {
+  var getData = JSON.parse(localStorage.getItem("user"));
+  console.log(getData);
+
+  if (email.value == getData.email_acc && password.value == getData.pass_acc) {
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Your Acc is Login",
+      showConfirmButton: false,
+      timer: 1500
+    });
+    localStorage.setItem("isLoggedIn", true); // Set isLoggedIn to true
+
+    window.location.assign("./dashboard.html");
+  } else if (email.value == "" || password.value == "") {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "please fill your field",
+      showConfirmButton: false,
+      timer: 1500
+    });
   } else {
-    passwordInput.type = 'password';
-    eyeIcon.classList.remove('fa-eye-slash');
+    alert("wrong email or password");
   }
-}); // const passwordInput_2 = document.getElementById("pass-acc");
-// const eyeIcon_2 = document.getElementById("eye-icon-2");
-// eyeIcon_2.addEventListener("click", () => {
-//   if (passwordInput_2.type === "password") {
-//     passwordInput_2.type = "text";
-//     eyeIcon_2.classList.add("fa-eye-slash");
-//   } else {
-//     passwordInput_2.type = "password";
-//     eyeIcon_2.classList.remove("fa-eye-slash");
-//   }
-// });
+});
+create_acc.addEventListener("click", function () {
+  //... (rest of the code remains the same)
+  localStorage.setItem("isLoggedIn", true); // Set isLoggedIn to true
+  //...
+});
