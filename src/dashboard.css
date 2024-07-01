@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+body{
+  box-sizing: border-box;
+}
+.logo {
+  width: 95px;
+  height: 45px;
+  margin-left: 65px;
+  margin-right: 150px;
+  margin: 5px 65px;
+}
+nav {
+  justify-content: space-around;
+}
+.container-fluid {
+  margin-top: -8px;
+}
+.li:hover {
+  color: white;
+  border-bottom: 2px solid orange;
+}
+a {
+  margin-right: 30px;
+}
+.li {
+  color: orange;
+}
+
+.video {
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.h11 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  font-size: 45px;
+}
+.videoText {
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 160px; */
+}
+
+.brides {
+  color: #ff0000;
+}
+.but1:hover {
+  color: orange;
+  background-color: black;
+}
+.but1 {
+  width: 220px;
+  background: transparent;
+  color: white;
+  border-color: white;
+  padding: 10px;
+}
+.rp {
+  text-align: center;
+  font-size: 70px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 540;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.ring {
+  width: 190px;
+  height: 190px;
+}
+.rtext {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.ringp {
+  margin-top: -10px;
+}
+.but2:hover {
+  background-color: white;
+  border-color: white;
+  color: orange;
+  border-bottom: white;
+  border-right: white;
+}
+.but2 {
+  color: black;
+  background-color: orange;
+  border-color: orange;
+  padding: 10px 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border-bottom: orange;
+  border-right: orange;
+}
+.rs {
+  color: orange;
+}
+.hina {
+  width: 450px;
+  height: 100vh;
+}
+.main {
+  margin-top: 90px;
+}
+.gtext {
+  margin-left: 80px;
+  margin-top: 150px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.h12 {
+  font-size: 90px;
+  font-weight: bold;
+}
+.but3:hover {
+  color: orange;
+  background-color: black;
+  border-bottom: black;
+  border-right: black;
+  border-color: black;
+}
+.but3 {
+  width: 220px;
+  background-color: #c5c5c5;
+  color: gray;
+  border-color: #c5c5c5;
+  padding: 10px;
+  margin-top: 10px;
+  border-bottom: #c5c5c5;
+  border-right: #c5c5c5;
+}
+.Jewe {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.imageText {
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.but4:hover {
+  color: orange;
+  background-color: black;
+  border-bottom: black;
+  border-right: black;
+  border-color: black;
+}
+.but4 {
+  width: 220px;
+  background-color: #c5c5c5;
+  color: rgb(114, 108, 108);
+  border-color: #c5c5c5;
+  padding: 10px;
+  margin-left: -10px;
+  border-bottom: #c5c5c5;
+  border-right: #c5c5c5;
+}
+.brand {
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 20px;
+}
+.blogo {
+  width: 180px;
+  height: 70px;
+}
+.gold {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 550;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 90px;
+}
+.phone {
+  padding-top: 20px 
+}
+
+.appslogo:hover {
+  margin-top: 1px;
+}
+.appslogo {
+  background-color: orange;
+  margin-left: 1px;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+.ary {
+  width: 70px;
+  height: 30px;
+  margin-top: 50px;
+  text-align: right;
+}
+.banklogo {
+  width: 50px;
+  height: 50px;
+}
+.set{
+  width: 90%;
+  height: 310px;
+}
+.cart-card{
+  display: none;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: row;
+background-color: rgb(241, 234, 219);
+width: 300%;
+box-shadow: 3px 3px 10px black;
+box-sizing: border-box;
+transition: .5s;
+
+}
+.cart-card img{
+  width: 200px;
+  height: 200px;
+
+}
+.quantity{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  /* width: 100px;
+  height: 100px; */
+}
+.quantity button{
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+    font-family: "Concert One", sans-serif;
+}
+.quantity button:nth-child(2){
+margin: 0 5%;
+}
+.img-div h4{
+font-size: 29px;
+  font-family: "Concert One", sans-serif;
+  /* margin-left: 2%; */
+  text-align: center;
+}
+.price3{
+  margin-right: 15%;
+  /* background-color: wheat; */
+  font-family: "Concert One", sans-serif;
+
+}
+.product-details{
+  margin-left: 2%;
+    font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.ary-name{
+  font-size: 20px;
+}
+.details{
+  font-size: 13px;
+  letter-spacing: 1;
+}
+.quantities-div{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 6%;
+  /* width: 100px;
+  height: 100px; */
+}
+#remove-btn{
+background-color: black;
+    font-family: "Concert One", sans-serif;
+    /* font-size: 20px; */
+    border-radius: 50%;
+   margin-left: 5%;
+   color: white;
+}
+#remove-btn:hover{
+  cursor: pointer;
+}
+.remove-acc{
+  background-color: transparent;
+  /* width: 15px;
+  height: 15px; */
+  border: none;
+  color: white;
+  border: white 1px solid;
+  padding: 0.5%;
+  margin-left: 4%;
+  margin-right: 2%;
+  font-family: "Concert One", sans-serif;
+}
+.remove-acc:hover {
+  color: orange;
+}
+/* .fa-user:hover{
+  cursor: pointer;
+  color: orange;
+} */
+ .but-cart:hover {
+  color: orange;
+  background-color: black;
+  border-bottom: black;
+  border-right: black;
+  border-color: black;
+}
+.but-cart {
+  width: 220px;
+  background-color: #c5c5c5;
+  color: rgb(114, 108, 108);
+  border-color: #c5c5c5;
+  padding: 10px;
+  margin-left: -10px;
+  border-bottom: #c5c5c5;
+  border-right: #c5c5c5;
+  transition: .5s;
+}
+
+
+
