@@ -55,6 +55,7 @@ create_acc.addEventListener("click", function () {
       showConfirmButton: false,
       timer: 1500,
     });
+
   } else {
     Swal.fire({
       position: "top-end",
@@ -204,3 +205,34 @@ login.addEventListener("click", function () {
     if (isLoggedIn) {
       showDashboard();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // swal({
+    //   title: "Are you sure?",
+    //   text: "Once deleted, you will not be able to recover this imaginary file!",
+    //   icon: "warning",
+    //   buttons: true,
+    //   dangerMode: true,
+    // }).then((willDelete) => {
+    //   if (willDelete) {
+    //     swal("Poof! Your imaginary file has been deleted!", {
+    //       icon: "success",
+    //     });
+    //   } else {
+    //     swal("Your imaginary file is safe!");
+    //   }
+    // });

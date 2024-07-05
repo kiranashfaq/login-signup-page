@@ -1,332 +1,357 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-.logo {
-  width: 95px;
-  height: 45px;
-  margin-left: 65px;
-  margin-right: 150px;
-  margin: 5px 65px;
-}
-nav {
-  justify-content: space-around;
-}
-.container-fluid {
-  margin-top: -8px;
-}
-.li:hover {
-  color: white;
-  border-bottom: 2px solid orange;
-}
-a {
-  margin-right: 30px;
-}
-.li {
-  color: orange;
-}
-
-.video {
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-.h11 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bolder;
-  font-size: 45px;
-}
-.videoText {
-  height: 590px;
+body {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* padding-left: 160px; */
-}
-
-.brides {
-  color: #ff0000;
-}
-.but1:hover {
-  color: orange;
-  background-color: black;
-}
-.but1 {
-  width: 220px;
-  background: transparent;
-  color: white;
-  border-color: white;
-  padding: 10px;
-}
-.rp {
-  text-align: center;
-  font-size: 70px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 540;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.ring {
-  width: 190px;
-  height: 190px;
-}
-.rtext {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.ringp {
-  margin-top: -10px;
-}
-.but2:hover {
-  background-color: white;
-  border-color: white;
-  color: orange;
-  border-bottom: white;
-  border-right: white;
-}
-.but2 {
-  color: black;
-  background-color: orange;
-  border-color: orange;
-  padding: 10px 20px;
-  font-weight: 500;
-  margin-top: 10px;
-  border-radius: 5px;
-  margin-bottom: 30px;
-  border-bottom: orange;
-  border-right: orange;
-}
-.rs {
-  color: orange;
-}
-.hina {
-  width: 450px;
-  height: 100vh;
-}
-.main {
-  margin-top: 90px;
-}
-.gtext {
-  margin-left: 80px;
-  margin-top: 150px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.h12 {
-  font-size: 90px;
-  font-weight: bold;
-}
-.but3:hover {
-  color: orange;
-  background-color: black;
-  border-bottom: black;
-  border-right: black;
-  border-color: black;
-}
-.but3 {
-  width: 220px;
-  background-color: #c5c5c5;
-  color: gray;
-  border-color: #c5c5c5;
-  padding: 10px;
-  margin-top: 10px;
-  border-bottom: #c5c5c5;
-  border-right: #c5c5c5;
-}
-.Jewe {
-  font-size: 60px;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.imageText {
-  height: 490px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-}
-.but4:hover {
-  color: orange;
-  background-color: black;
-  border-bottom: black;
-  border-right: black;
-  border-color: black;
-}
-.but4 {
-  width: 220px;
-  background-color: #c5c5c5;
-  color: rgb(114, 108, 108);
-  border-color: #c5c5c5;
-  padding: 10px;
-  margin-left: -10px;
-  border-bottom: #c5c5c5;
-  border-right: #c5c5c5;
-}
-.brand {
-  text-align: center;
-  font-size: 65px;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-bottom: 20px;
-}
-.blogo {
-  width: 180px;
-  height: 70px;
-}
-.gold {
-  text-align: center;
-  font-size: 45px;
-  font-weight: 550;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-top: 90px;
-}
-.phone {
-  padding-top: 20px 
-}
-
-.appslogo:hover {
-  margin-top: 1px;
-}
-.appslogo {
-  background-color: orange;
-  margin-left: 1px;
-  width: 30px;
-  height: 30px;
-  margin-top: 20px;
-}
-.ary {
-  width: 70px;
-  height: 30px;
-  margin-top: 50px;
-  text-align: right;
-}
-.banklogo {
-  width: 50px;
-  height: 50px;
-}
-.set{
-  width: 90%;
-  height: 310px;
-}
-.cart-card{
-  display: none;
-  /* display: flex; */
-  /* align-items: center; */
-  justify-content: center;
-  flex-direction: row;
-background-color: rgb(241, 234, 219);
-width: 300%;
-box-shadow: 3px 3px 10px black;
-box-sizing: border-box;
-transition: .5s;
-
-}
-.cart-card img{
-  width: 200px;
-  height: 200px;
-
-}
-.quantity{
-  display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  margin-right: 5%;
-  /* width: 100px;
-  height: 100px; */
+  flex-direction: column;
+  min-height: 100vh;
+  /* background: linear-gradient(45deg, #333, #f60e95, #252222, #520a3c); */
+  /* background-color: aqua; */
 }
-.quantity button{
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border-radius: 50%;
-    font-family: "Concert One", sans-serif;
+.tittle {
+    margin-top: 3%;
 }
-.quantity button:nth-child(2){
-margin: 0 5%;
+.dropdown-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding-top: 4%;
 }
-.img-div h4{
-font-size: 29px;
-  font-family: "Concert One", sans-serif;
-  /* margin-left: 2%; */
-  text-align: center;
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
 }
-.price3{
-  margin-right: 15%;
-  /* background-color: wheat; */
-  font-family: "Concert One", sans-serif;
+.container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  background: #c7f2e3;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.container .card:hover {
+  height: 400px;
+}
+.container .card .imgBx {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+  background-color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.container .card:hover .imgBx {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.container .card .content {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  padding: 0 30px;
+  height: 35px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
 }
-.product-details{
-  margin-left: 2%;
-    font-family: "Concert One", sans-serif;
-  font-weight: 400;
+.container .card:hover .content {
+  top: 130px;
+  height: 250px;
+}
+.container .card .content h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--clr);
+}
+.container .card .content p {
+  color: #333;
+}
+.container .card .content a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--clr);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+}
+img {
+  width: 300px;
+  height: 220px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: linear-gradient(45deg, #333, #f60e95, #252222, #520a3c); */
+  background-color: #081f37;
+  /* flex-direction: row; */
+}
+
+.container-brand {
+  position: relative;
+  display: flex;
+}
+
+.container-brand .card-brand {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+ margin-bottom: 5%;
+ margin-top: -40%;
+}
+
+.container-brand .card-brand:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #f4e022; */
+  background-color: #1fbdfc;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container-brand .card-brand:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container-brand .card-brand:after {
+  content: "Products";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.container-brand .card-brand .imgBx-brand {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container-brand .card-brand:hover .imgBx-brand {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.container-brand .card-brand .imgBx-brand img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+  width: 270px;
+}
+
+.container-brand .card-brand .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.container-brand .card-brand:hover .contentBx {
+  height: 210px;
+}
+
+.container-brand .card-brand .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container-brand .card-brand .contentBx .size,
+.container-brand .card-brand .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container-brand .card-brand:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container-brand .card-brand:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container-brand .card-brand .contentBx .size h3,
+.container-brand .card-brand .contentBx .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container-brand .card-brand .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* .container-brand .card-brand .contentBx .size span:hover {  other bug
+    background: #B90000;
+} */
+
+.container-brand .card-brand .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/* 
+.container-brand .card-brand .contentBx .color span:nth-child(2) {
+     background: #1BBFE9;
+}
+
+.container-brand .card-brand .contentBx .color span:nth-child(3) {
+     background: #1B2FE9;
+}
+
+.container-brand .card-brand .contentBx .color span:nth-child(4) {
+     background: #080481;
+} */
+
+.container-brand .card-brand .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container-brand .card-brand:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+}
+.price {
+  color: white;
+  /* font-size: 17px; */
+}
+.text-yellow {
+  color: #1fbdfc;
+  font-weight: bold;
+}
+.add-cart {
+  /* transition: .3s; */
+}
+.container-brand .card-brand:hover .contentBx a:hover {
+  background-color: #1fbdfc;
+  color: black;
+  cursor: pointer;
+}
+select {
+  background-color: #c7f2e3;
+  padding: 5px 7px;
+  margin-bottom: 0.4%;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
   font-style: normal;
 }
-.ary-name{
-  font-size: 20px;
+select option {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-.details{
-  font-size: 13px;
-  letter-spacing: 1;
-}
-.quantities-div{
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  margin: 0 6%;
-  /* width: 100px;
-  height: 100px; */
-}
-#remove-btn{
-background-color: black;
-    font-family: "Concert One", sans-serif;
-    /* font-size: 20px; */
-    border-radius: 50%;
-   margin-left: 5%;
+#remove-acc{
+   background-color: transparent;
+   border: 2px solid white;
+   margin-top: 1%;
    color: white;
+  font-family: "Dancing Script", cursive;
+  padding: 0.7% 2%;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 80%;
 }
-#remove-btn:hover{
-  cursor: pointer;
+#remove-acc span{
+    scale: 1.2;
+   /* padding-top: 10px; */
+   padding-left: 10px;
 }
-.remove-acc{
-  background-color: transparent;
-  /* width: 15px;
-  height: 15px; */
-  border: none;
-  color: white;
-  border: white 1px solid;
-  padding: 0.5%;
-  margin-left: 4%;
-  margin-right: 2%;
-  font-family: "Concert One", sans-serif;
-}
-.remove-acc:hover {
-  color: orange;
-}
-/* .fa-user:hover{
-  cursor: pointer;
-  color: orange;
-} */
- .but-cart:hover {
-  color: orange;
-  background-color: black;
-  border-bottom: black;
-  border-right: black;
-  border-color: black;
-}
-.but-cart {
-  width: 220px;
-  background-color: #c5c5c5;
-  color: rgb(114, 108, 108);
-  border-color: #c5c5c5;
-  padding: 10px;
-  margin-left: -10px;
-  border-bottom: #c5c5c5;
-  border-right: #c5c5c5;
-  transition: .5s;
-}
-
-
-
